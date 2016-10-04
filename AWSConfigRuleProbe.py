@@ -30,7 +30,7 @@ class AWSConfigRuleProbe(Probe):
         return
 
     def appendAtomics(self):
-        self.appendAtomic(self.ec2Run(), self.ec2RunR)
+        self.appendAtomic(self.ec2Run, self.ec2RunR)
         # seld.appendAtomic(self.nmapParse,self.nmapParseR)
 
 
