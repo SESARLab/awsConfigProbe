@@ -7,5 +7,6 @@
     # ./install.sh    
 
 **Usage**
+
 Replace aws_access_key,aws_secret_access_key,region with your AWS credentials
 Set which rules you want to check rulename (rulename comes for you AWS Config dashboard)
