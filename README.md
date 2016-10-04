@@ -2,9 +2,9 @@
 ====================
 **Installation**
 
-    `git clone https://github.com/SESARLab/mooncloud_probe_awsconfigrule.git
-    cd mooncloud_probe_awsconfigrule
-    ./install.sh`
+    # git clone https://github.com/SESARLab/mooncloud_probe_awsconfigrule.git
+    # cd mooncloud_probe_awsconfigrule
+    # ./install.sh    
 
 **Usage**
 Replace aws_access_key,aws_secret_access_key,region with your AWS credentials
