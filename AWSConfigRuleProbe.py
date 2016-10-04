@@ -2,8 +2,6 @@ __author__ = 'Filippo Gaudenzi'
 __email__ = 'filippo.gaudenzi@unimi.it'
 
 from testagent.probe import Probe
-from libnmap.process import NmapProcess
-from libnmap.parser import NmapParser, NmapParserException
 import boto3
 
 # TODO controlli
