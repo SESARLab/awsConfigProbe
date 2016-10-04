@@ -20,6 +20,7 @@ class AWSConfigRuleProbe(Probe):
             )
         except:
             return False
+        print response
         for ev in response["EvaluationResults"]:
             if (ev['ComplianceType'] == 'NON_COMPLIANT'):
                 return False
