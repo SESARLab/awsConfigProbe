@@ -31,3 +31,7 @@ Set which rules you want to check in _rulename_ field (rulename comes for you AW
     
         </TestCases>
     </collector>
+
+
+
+Devloped by: filippo.gaudenzi at unimi dot it, github account:[anonymez](https://github.com/anonymez) 
