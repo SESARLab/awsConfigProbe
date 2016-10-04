@@ -8,5 +8,26 @@
 
 **Usage**
 
-Replace aws_access_key,aws_secret_access_key,region with your AWS credentials
-Set which rules you want to check rulename (rulename comes for you AWS Config dashboard)
+Replace _aws_access_key,aws_secret_access_key,region_ with your AWS credentials
+Set which rules you want to check in _rulename_ field (rulename comes for you AWS Config dashboard)
+
+    <collector probe_driver="AWSConfigRuleProbe" id="awstest" cmid="awstest">
+        <TestCases>
+            <TestCase>
+                <ID>1</ID>
+                <TestInstance Operation="config">
+                    <Input>
+                        <Item key="aws_access_key" value="XXX"/>
+                        <Item key="aws_secret_access_key" value="XXX"/>
+                        <Item key="region" value="eu-west-1"/>
+                    </Input>
+                </TestInstance>
+                <TestInstance Operation="rule">
+                    <Input>
+                        <Item key="rulename" value="XXX"/>
+                    </Input>
+                </TestInstance>
+            </TestCase>
+    
+        </TestCases>
+    </collector>
