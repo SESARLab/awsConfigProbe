@@ -7,12 +7,14 @@ import boto3
 # TODO controlli
 class AWSConfigRuleProbe(Probe):
     def ec2Run(self, inputs):
+        print self.testinstances["config"]["region"]
         session = boto3.Session(
             aws_access_key_id= self.testinstances["config"]["aws_access_key"],
             aws_secret_access_key=self.testinstances["config"]["aws_secret_access_key"],
             region_name=self.testinstances["config"]["region"],
             # aws_session_token=SESSION_TOKEN,
         )
+
         client = boto3.client('config')
         try:
             response = client.get_compliance_details_by_config_rule(
